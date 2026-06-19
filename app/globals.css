@@ -1,26 +1,166 @@
-@import "tailwindcss";
+@import "tailwindcss" source(none);
+@source "../src";
+@source "../app";
+@import "tw-animate-css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
+
+/* Persona 5 Royal inspired design system */
 
 @theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --font-display: "Bebas Neue", "Oswald", sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  --radius: 0.25rem;
+  /* Persona 5: deep black, blood red, bone white, dark gray */
+  --background: #111111;
+  --foreground: #FFFFFF;
+  --card: #111111;
+  --card-foreground: #FFFFFF;
+  --primary: #D6001C;
+  --primary-foreground: #FFFFFF;
+  --secondary: #111111;
+  --secondary-foreground: #FFFFFF;
+  --muted: #111111;
+  --muted-foreground: #808080;
+  --accent: #D6001C;
+  --accent-foreground: #FFFFFF;
+  --border: #D6001C;
+  --ring: #D6001C;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-body);
+    background-image:
+      repeating-linear-gradient(
+        45deg,
+        transparent 0,
+        transparent 18px,
+        oklch(0.15 0.005 0) 18px,
+        oklch(0.15 0.005 0) 19px
+      );
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: 0.02em;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Persona 5 styled utility classes */
+@utility p5-title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: inline-block;
+  transform: skew(-6deg);
+  background: var(--color-primary);
+  color: var(--color-primary-foreground);
+  padding: 0.5rem 1.25rem;
+  box-shadow: 6px 6px 0 0 oklch(0 0 0), 6px 6px 0 2px var(--color-primary);
+}
+
+@utility p5-card {
+  background: var(--card);
+  border: 2px solid var(--color-primary);
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+
+  &:hover {
+    transform: translate(-3px, -3px) skew(-1deg);
+    box-shadow: 8px 8px 0 0 var(--color-primary);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 18px;
+    height: 18px;
+    background: var(--color-primary);
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+  }
+}
+
+@utility p5-btn {
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.75rem;
+  background: var(--color-primary);
+  color: var(--color-primary-foreground);
+  transform: skew(-8deg);
+  border: 2px solid oklch(0 0 0);
+  box-shadow: 5px 5px 0 0 oklch(0 0 0);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  cursor: pointer;
+
+  & > * {
+    transform: skew(8deg);
+  }
+
+  &:hover {
+    transform: skew(-8deg) translate(-2px, -2px);
+    box-shadow: 8px 8px 0 0 oklch(0 0 0);
+    background: oklch(0.62 0.26 27);
+  }
+
+  &:active {
+    transform: skew(-8deg) translate(2px, 2px);
+    box-shadow: 2px 2px 0 0 oklch(0 0 0);
+  }
+}
+
+@utility p5-skew {
+  transform: skew(-6deg);
+}
+
+@utility p5-tag {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  padding: 0.25rem 0.6rem;
+  background: oklch(0 0 0);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  text-transform: uppercase;
 }
