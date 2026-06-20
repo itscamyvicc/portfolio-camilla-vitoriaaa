@@ -3,11 +3,11 @@ import "./globals.css";
 import { Providers } from "./Providers";
 
 export const metadata: Metadata = {
-  title: "Camilla — Phantom Thief Dossier",
+  title: "Meu Portfolio — Camilla",
   description:
     "Portfolio pessoal de Camila — Estudante de Análise e Desenvolvimento de Sistemas.",
   openGraph: {
-    title: "Camilla — Phantom Thief Dossier",
+    title: "Meu Portfolio — Camilla",
     description: "Portfolio pessoal inspirado em Persona 5 Royal.",
     type: "website",
   },
