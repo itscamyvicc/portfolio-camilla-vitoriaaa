@@ -20,18 +20,18 @@ export function Hero() {
       />
 
       <div className="relative mx-auto flex min-h-[88vh] max-w-6xl flex-col justify-center gap-6 px-4 py-20">
-        <span className="p5-tag w-fit">Top Secret · 01</span>
+        <span className="p5-tag w-fit">Início</span>
 
         <h1 className="p5-title text-4xl sm:text-5xl md:text-7xl">
-          Phantom Thief Dossier
+          Phantom Thief of Hearts - Dev. Version
         </h1>
 
         <div className="flex flex-col gap-1">
           <span className="font-display text-sm uppercase tracking-[0.3em] text-primary">
-            Codename
+            Codenome
           </span>
           <p className="font-display text-6xl font-black leading-none tracking-tight text-foreground sm:text-7xl md:text-8xl">
-            CAMILA
+            The Raven
           </p>
         </div>
 
@@ -40,19 +40,19 @@ export function Hero() {
           <span className="font-semibold text-foreground">
             Análise e Desenvolvimento de Sistemas
           </span>
-          . Roubando bugs, deixando código limpo. Bem-vindo ao meu metaverso
-          digital.
+          . Bem-vindo(a) ao meu metaverso
+          digital!
         </p>
 
         <div className="mt-4 flex flex-wrap gap-4">
           <a href="#projects" className="p5-btn">
-            <span>View Mission Log →</span>
+            <span>Ver Registro de Missões →</span>
           </a>
           <a
             href="#contact"
             className="p5-skew border-2 border-foreground px-6 py-3 font-display font-bold uppercase tracking-widest text-foreground transition-colors hover:bg-foreground hover:text-background"
           >
-            Calling Card
+            Contatos
           </a>
         </div>
       </div>

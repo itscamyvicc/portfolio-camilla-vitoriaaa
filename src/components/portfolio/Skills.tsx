@@ -4,19 +4,18 @@ import { SectionTitle } from "./Sectiontitle";
 const skills = [
   { name: "HTML", level: "MAX" },
   { name: "CSS", level: "MAX" },
-  { name: "JavaScript", level: "99" },
-  { name: "PHP", level: "85" },
-  { name: "Laravel", level: "80" },
-  { name: "MySQL", level: "88" },
-  { name: "Git", level: "92" },
-  { name: "Next.js", level: "78" },
+  { name: "JavaScript", level: "50" },
+  { name: "Laravel", level: "25" },
+  { name: "MySQL", level: "MAX" },
+  { name: "Git", level: "MAX" },
+  { name: "Next.js", level: "70" },
 ];
 
 export function Skills() {
   return (
     <section id="skills" className="border-b-2 border-primary py-20">
       <div className="mx-auto max-w-6xl px-4">
-        <SectionTitle eyebrow="Skill Tree">Persona Abilities</SectionTitle>
+        <SectionTitle eyebrow="Árvore de Habilidades">Habilidades</SectionTitle>
 
         <ul className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-4">
           {skills.map((s, i) => (

@@ -5,6 +5,7 @@ import { Projects } from "@/components/portfolio/Projects";
 import { Contact } from "@/components/portfolio/Contact";
 import { Navbar } from "@/components/portfolio/Navbar";
 
+
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -15,7 +16,7 @@ export default function Home() {
       <Projects />
       <Contact />
       <footer className="border-t-2 border-primary py-6 text-center text-xs uppercase tracking-widest text-muted-foreground">
-        © {new Date().getFullYear()} Camilla — Take Your Heart
+        © {new Date().getFullYear()} Camilla Vitoria Silva — Gonna Take Your Heart.
       </footer>
     </main>
   );

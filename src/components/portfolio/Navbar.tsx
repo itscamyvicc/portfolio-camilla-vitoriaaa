@@ -4,11 +4,11 @@
 import { useState } from "react";
 
 const links = [
-  { href: "#hero", label: "Dossier" },
-  { href: "#about", label: "Profile" },
-  { href: "#skills", label: "Abilities" },
-  { href: "#projects", label: "Missions" },
-  { href: "#contact", label: "Calling Card" },
+  { href: "#hero", label: "Início" },
+  { href: "#about", label: "Sobre mim" },
+  { href: "#skills", label: "Habilidades" },
+  { href: "#projects", label: "Projetos" },
+  { href: "#contact", label: "Contatos" },
 ];
 
 export function Navbar() {
@@ -19,7 +19,7 @@ export function Navbar() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <a href="#hero" className="p5-skew">
           <span className="font-display text-2xl font-black tracking-wider text-primary">
-            CAMILA<span className="text-foreground">.</span>
+            Meu Portfolio -  Edição P5R<span className="text-foreground"></span>
           </span>
         </a>
 

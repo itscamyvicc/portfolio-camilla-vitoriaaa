@@ -1,12 +1,12 @@
 // About section — Confidant Profile.
-import { SectionTitle } from "./sectiontitle";
+import { SectionTitle } from "./Sectiontitle";
 
 export function About() {
   return (
     <section id="about" className="border-b-2 border-primary py-20">
       <div className="mx-auto max-w-6xl px-4">
-        <SectionTitle eyebrow="Arcana · The Magician">
-          Confidant Profile
+        <SectionTitle eyebrow="Sobre Mim">
+          Quem sou eu?
         </SectionTitle>
 
         <div className="grid gap-8 md:grid-cols-[1fr_2fr]">
@@ -14,27 +14,27 @@ export function About() {
             <dl className="space-y-3 text-sm">
               <div>
                 <dt className="font-display uppercase tracking-widest text-primary">
-                  Name
+                  Nome
                 </dt>
-                <dd className="text-lg font-semibold">Camila</dd>
+                <dd className="text-lg font-semibold">Camilla Vitoria Silva</dd>
               </div>
               <div>
                 <dt className="font-display uppercase tracking-widest text-primary">
-                  Role
+                  Função
                 </dt>
-                <dd>Estudante de ADS</dd>
+                <dd>Desenvolvedora de Sistemas</dd>
               </div>
               <div>
                 <dt className="font-display uppercase tracking-widest text-primary">
                   Status
                 </dt>
-                <dd>Ativa · Disponível para missões</dd>
+                <dd>Ativa</dd>
               </div>
               <div>
                 <dt className="font-display uppercase tracking-widest text-primary">
-                  Specialty
+                  Especialidade
                 </dt>
-                <dd>Web Development & Backend</dd>
+                <dd>Desenvolvimento Web e Back-end</dd>
               </div>
             </dl>
           </div>
@@ -42,11 +42,11 @@ export function About() {
           <div className="p5-card p-8 text-base leading-relaxed text-muted-foreground">
             <p className="mb-4">
               Sou apaixonada por transformar ideias em interfaces funcionais e
-              experiências memoráveis. Atualmente estudo{" "}
+              experiências memoráveis. Acabo de terminar meus estudos em{" "}
               <span className="font-semibold text-foreground">
                 Análise e Desenvolvimento de Sistemas
               </span>
-              , mergulhando no universo do desenvolvimento web full-stack.
+              , e continuo mergulhando no universo do desenvolvimento web full-stack.
             </p>
             <p>
               Acredito que código bom é como um bom plano de assalto: claro,
