@@ -9,6 +9,7 @@ const skills = [
   { name: "MySQL", level: "MAX" },
   { name: "Git", level: "MAX" },
   { name: "Next.js", level: "70" },
+  { name: "Python", level: "50" },
 ];
 
 export function Skills() {

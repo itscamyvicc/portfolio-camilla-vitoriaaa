@@ -28,10 +28,10 @@ export function Hero() {
 
         <div className="flex flex-col gap-1">
           <span className="font-display text-sm uppercase tracking-[0.3em] text-primary">
-            Codenome
+            Meu nome é:
           </span>
           <p className="font-display text-6xl font-black leading-none tracking-tight text-foreground sm:text-7xl md:text-8xl">
-            The Raven
+            Camilla
           </p>
         </div>
 

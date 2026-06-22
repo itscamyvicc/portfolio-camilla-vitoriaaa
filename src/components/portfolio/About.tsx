@@ -49,7 +49,7 @@ export function About() {
               , e continuo mergulhando no universo do desenvolvimento web full-stack.
             </p>
             <p>
-              Acredito que código bom é como um bom plano de assalto: claro,
+              Acredito que um bom código precisa ser claro,
               eficiente e elegante. Quando não estou programando, estou
               estudando novas tecnologias e jogando RPGs que inspiram meu
               próximo projeto.

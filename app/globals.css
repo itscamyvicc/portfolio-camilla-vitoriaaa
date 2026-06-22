@@ -93,7 +93,7 @@
 
 @utility p5-card {
   background: var(--card);
-  border: 2px solid var(--color-primary);
+  border: 2px solid var(--card-foreground);
   position: relative;
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 
@@ -109,7 +109,6 @@
     right: -2px;
     width: 18px;
     height: 18px;
-    background: var(--color-primary);
     clip-path: polygon(100% 0, 0 0, 100% 100%);
   }
 }

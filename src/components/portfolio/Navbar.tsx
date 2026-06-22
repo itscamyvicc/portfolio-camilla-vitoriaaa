@@ -17,7 +17,7 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b-2 border-primary bg-background/95 backdrop-blur">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-        <a href="#hero" className="p5-skew">
+        <a className="p5-skew">
           <span className="font-display text-2xl font-black tracking-wider text-primary">
             Meu Portfolio -  Edição P5R<span className="text-foreground"></span>
           </span>
